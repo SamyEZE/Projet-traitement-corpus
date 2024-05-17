@@ -133,7 +133,7 @@ P-value: 5.333516116185883e-06
 J'ai également généré des visualisations pour mieux comprendre la distribution des données et identifier d'éventuelles valeurs aberrantes.
 
 - **Scatter plot de la corrélation** : La visualisation montre une dispersion des points, indiquant une faible corrélation entre les longueurs des instructions et des réponses.
-![Correlation](plots/instruction_reponse_length_correlation.png)
+![Correlation](plots/instruction_response_length_correlation.png)
 
 - **Boxplot des longueurs des instructions et des réponses** : Le boxplot montre une grande variabilité dans les longueurs des réponses, avec plusieurs valeurs aberrantes visibles.
 ![Boxplot](plots/boxplot_lengths.png)
