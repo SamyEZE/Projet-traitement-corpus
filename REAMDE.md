@@ -113,4 +113,45 @@ Les graphiques suivants ont été générés et sauvegardés dans le dossier [pl
 - ![Distribution du nombre de mots par réponse](./plots/metric_word_count_distribution.png)
 - ![Graphique de la loi de Zipf pour les fréquences des mots](./plots/metric_zipf_law.png)
 
+## TP 5 : Calcul de la Corrélation, agrandissement du corpus, division du corpus. 
+
+### Objectif
+L'objectif de ce TP était de calculer la corrélation entre la longueur des instructions et celle des réponses dans un corpus de données. J'ai utilisé un script Python pour effectuer cette analyse.
+
+### Script développé
+Le script a été développé pour charger les données depuis un fichier JSON, calculer les longueurs des instructions et des réponses, puis déterminer la corrélation entre ces deux variables. J'ai également visualisé cette corrélation à l'aide de scatter plots et de boxplots pour mieux comprendre la distribution des données.
+
+### Résultats
+
+Coefficient de corrélation: 0.13266624087033163
+P-value: 5.333516116185883e-06
+### Interprétation des résultats
+- **Faible corrélation positive** : Le coefficient de corrélation de 0.13266624087033163 indique une faible corrélation positive entre la longueur des instructions et des réponses. Cela signifie qu'il y a une légère tendance pour les réponses plus longues à être associées à des instructions plus longues, mais cette relation n'est pas très forte.
+- **Significativité statistique** : La p-value très faible (5.333516116185883e-06) indique que la corrélation observée est statistiquement significative, ce qui signifie qu'il est très improbable que cette corrélation soit due au hasard.
+
+### Visualisations
+J'ai également généré des visualisations pour mieux comprendre la distribution des données et identifier d'éventuelles valeurs aberrantes.
+
+- **Scatter plot de la corrélation** : La visualisation montre une dispersion des points, indiquant une faible corrélation entre les longueurs des instructions et des réponses.
+![Correlation](plots/instruction_reponse_length_correlation.png)
+
+- **Boxplot des longueurs des instructions et des réponses** : Le boxplot montre une grande variabilité dans les longueurs des réponses, avec plusieurs valeurs aberrantes visibles.
+![Boxplot](plots/boxplot_lengths.png)
+
+
+
+### Agrandissement du corpus 
+Il suffit de modifier le script scraper.py et d'y ajouter d'autres subreddits.
+
+### Découper le corpus 
+
+Pour ce faire, on va travailler sur le fichier scraped_data.json qui contient les données nettoyées et structurées, à l'aide du script decoupage.py
+## decoupage.py 
+
+Ce script utilise train_test_split de sklearn pour diviser les données en deux parties : 80% pour l'apprentissage et 20% pour le test. Les résultats sont sauvegardés dans deux nouveaux fichiers JSON : scraped_data_train.json et scraped_data_test.json.
+
+
+
+
+
 
