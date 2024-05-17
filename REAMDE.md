@@ -56,3 +56,61 @@ Le script développé réalise les tâches suivantes :
 ### Résultats
 - Un corpus structuré avec les champs `instruction`, `context`, `response` et `category`.
 - Les données sont prêtes pour une analyse ou un entraînement de modèles NLP.
+
+
+## TD 3 : Stocker et Charger des Données Annotées
+
+### Objectif
+Stocker efficacement les données récupérées et les charger dans Python pour les explorer et les annoter.
+
+### Étapes Réalisées
+
+1. **Stockage des Données**
+   - Conversion des données nettoyées au format CSV et JSON pour une meilleure accessibilité.
+
+2. **Chargement des Données**
+   - Utilisation de pandas pour charger les fichiers CSV et JSON dans Python.
+
+3. **Annotation avec spaCy**
+   - Utilisation de spaCy pour annoter les réponses en extrayant les entités nommées.
+
+### Résultats
+- Les données nettoyées ont été stockées aux formats CSV et JSON.
+- Les données ont été chargées dans Python pour exploration.
+- Les réponses ont été annotées en utilisant spaCy, et les annotations ont été sauvegardées dans un fichier JSON.
+
+
+## TP 4 : Calcul et Visualisation de Métriques Pertinentes
+
+### Métriques Calculées
+Pour ce TP, j'ai choisi de calculer quelques métriques pertinentes pour analyser mon corpus :
+#### Longueur des Textes
+- Longueur moyenne, maximale et minimale des réponses.
+
+#### Nombre de Mots
+- Nombre moyen de mots par réponse.
+
+#### Distribution des Longueurs de Texte
+- Histogramme montrant la distribution des longueurs de texte.
+
+#### Distribution du Nombre de Mots
+- Histogramme montrant la distribution du nombre de mots par réponse.
+
+#### Loi de Zipf
+- Analyse de la loi de Zipf pour les fréquences des mots dans le corpus.
+
+### Scripts Développés
+#### Script de Structuration des Données
+- Ce script charge les données depuis un fichier CSV, les insère dans une base de données SQLite, et retourne les données structurées.
+
+#### Script de Calcul et Visualisation des Statistiques
+- Ce script calcule les statistiques de longueur des textes et du nombre de mots, visualise ces données, effectue une analyse de la loi de Zipf, et annote les réponses avec spaCy pour extraire les entités nommées.
+
+### Visualisations Générées
+Les graphiques suivants ont été générés et sauvegardés dans le dossier [plots](./plots) :
+
+- ![Distribution des longueurs de texte](./plots/metric_text_length_distribution.png)
+- ![Distribution du nombre de mots par réponse](./plots/metric_word_count_distribution.png)
+- ![Graphique de la loi de Zipf pour les fréquences des mots](./plots/metric_zipf_law.png)
+
+
